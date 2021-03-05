@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/*!
+ * Bootstrap v3.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+* {
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  /* font-size: 10px; */
+  -webkit-tap-highlight-color: transparent; }
+
+/* img {
+  vertical-align: middle; } */
+
+.container, .ohio-external-takeover-header, .ohio-external-takeover-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  .container:before, .ohio-external-takeover-header:before, .ohio-external-takeover-content:before, .container:after, .ohio-external-takeover-header:after, .ohio-external-takeover-content:after {
+    display: table;
+    content: " "; }
+  .container:after, .ohio-external-takeover-header:after, .ohio-external-takeover-content:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .container, .ohio-external-takeover-header, .ohio-external-takeover-content {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container, .ohio-external-takeover-header, .ohio-external-takeover-content {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container, .ohio-external-takeover-header, .ohio-external-takeover-content {
+      width: 1170px; } }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  .container-fluid:before, .container-fluid:after {
+    display: table;
+    content: " "; }
+  .container-fluid:after {
+    clear: both; }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .row:before, .row:after {
+    display: table;
+    content: " "; }
+  .row:after {
+    clear: both; }
+
+.col-xs-1, /*.col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,*/ .col-xs-12, /*.col-sm-12,*/ .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-xs-1, /*.col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11,*/ .col-xs-12 {
+  float: left; }
+
+.col-xs-1 {
+  width: 8.33333%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.full-width, .ohio-card-bg-img, .ohio-card-install-btn {
+  width: 100%; 
+  }
+
+.ohio-gray-border, .ohio-app-widget-container, .ohio-card, .ohio-vector-map-row {
+  border: 1px solid #A1A1A1; }
+
+.slick-slide {
+  height: fit-content;
+}
+
+.ohio-card {
+  border-radius: 4px;
+  position: relative; }
+  .ohio-card-header, .ohio-card-location, .ohio-card-content {
+    padding: 10px 15px; }
+  .ohio-card-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .ohio-card-header-img {
+      border-radius: 50%;
+      margin-right: 10px;
+      height: 32px;
+      width: 32px; }
+  .ohio-card-bg:first-child .ohio-card-bg-img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .ohio-card-location {
+    border-bottom: 1px solid #d8d8d8;
+    color: #525051; }
+  .ohio-card-profile, .ohio-card-app {
+    margin-top: -40px;
+    text-align: center; }
+    .ohio-card-profile-icon, .ohio-card-profile-img, .ohio-card-app-icon, .ohio-card-app-img {
+      border-radius: 50%;
+      height: 80px;
+      width: 80px; }
+    .ohio-card-profile-img, .ohio-card-app-img {
+      margin-right: 10px; }
+  .ohio-card-profile-icon {
+    background-color: #700017;
+    color: #ffffff;
+    font-size: 3.4rem;
+    padding: 20px 0; }
+    .theme-green .ohio-card-profile-icon {
+      background-color: #5e8000; }
+    .theme-blue .ohio-card-profile-icon {
+      background-color: #3D7AA9; }
+  .ohio-card-app-img {
+    border-radius: 4px; }
+  .ohio-card-content {
+    padding-top: 0; }
+    .ohio-card-content-header {
+      margin-bottom: 3px;
+      margin-top: 23px; }
+    .ohio-card--center .ohio-card-content {
+      text-align: center; }
+  .ohio-card-rating {
+    color: #525051; }
+  .ohio-card-social {
+    color: #700017;
+    font-size: 2.8rem; }
+    .ohio-card-social-link {
+      color: #700017;
+      margin: 0 10px; }
+      .theme-green .ohio-card-social-link {
+        color: #5e8000; }
+      .theme-blue .ohio-card-social-link {
+        color: #3D7AA9; }
+      .ohio-card-social-link:hover {
+        color: #540011; }
+      .ohio-card-social-link:active {
+        color: #8f001d; }
+      .theme-green .ohio-card-social-link:hover {
+        color: #4b6600; }
+      .theme-green .ohio-card-social-link:active {
+        color: #709900; }
+      .theme-blue .ohio-card-social-link:hover {
+        color: #136bad; }
+      .theme-blue .ohio-card-social-link:active {
+        color: #3d8ecc; }
+      .ohio-card-social-link:focus, .ohio-card-social-link:hover {
+        text-decoration: none; }
+      .ohio-card-social-link:active {
+        color: #8f001d; }
+  .ohio-card-install {
+    margin: 0 15px 10px; }
+
+.ohio-card {
+  border-radius: 4px;
+  position: relative; }
+  .ohio-card-header, .ohio-card-location, .ohio-card-content {
+    padding: 10px 15px; }
+  .ohio-card-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .ohio-card-header-img {
+      border-radius: 50%;
+      margin-right: 10px;
+      height: 32px;
+      width: 32px; }
+  .ohio-card-bg:first-child .ohio-card-bg-img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .ohio-card-location {
+    border-bottom: 1px solid #d8d8d8;
+    color: #525051; }
+  .ohio-card-profile, .ohio-card-app {
+    margin-top: -40px;
+    text-align: center; }
+    .ohio-card-profile-icon, .ohio-card-profile-img, .ohio-card-app-icon, .ohio-card-app-img {
+      border-radius: 50%;
+      height: 80px;
+      width: 80px; }
+    .ohio-card-profile-img, .ohio-card-app-img {
+      margin-right: 10px; }
+  .ohio-card-profile-icon {
+    background-color: #700017;
+    color: #ffffff;
+    font-size: 3.4rem;
+    padding: 20px 0; }
+    .theme-green .ohio-card-profile-icon {
+      background-color: #5e8000; }
+    .theme-blue .ohio-card-profile-icon {
+      background-color: #3D7AA9; }
+  .ohio-card-app-img {
+    border-radius: 4px; }
+  .ohio-card-content {
+    padding-top: 0; }
+    .ohio-card-content-header {
+      margin-bottom: 3px;
+      margin-top: 23px; }
+    .ohio-card--center .ohio-card-content {
+      text-align: center; }
+  .ohio-card-rating {
+    color: #525051; }
+  .ohio-card-social {
+    color: #700017;
+    font-size: 2.8rem; }
+    .ohio-card-social-link {
+      color: #700017;
+      margin: 0 10px; }
+      .theme-green .ohio-card-social-link {
+        color: #5e8000; }
+      .theme-blue .ohio-card-social-link {
+        color: #3D7AA9; }
+      .ohio-card-social-link:hover {
+        color: #540011; }
+      .ohio-card-social-link:active {
+        color: #8f001d; }
+      .theme-green .ohio-card-social-link:hover {
+        color: #4b6600; }
+      .theme-green .ohio-card-social-link:active {
+        color: #709900; }
+      .theme-blue .ohio-card-social-link:hover {
+        color: #136bad; }
+      .theme-blue .ohio-card-social-link:active {
+        color: #3d8ecc; }
+      .ohio-card-social-link:focus, .ohio-card-social-link:hover {
+        text-decoration: none; }
+      .ohio-card-social-link:active {
+        color: #8f001d; }
+  .ohio-card-install {
+    margin: 0 15px 10px; }
+
+.ohio-carousel-cards article {
+  margin: 10px; }
+
+.ohio-carousel-cards__main-container {
+  position: relative; 
+  }
+
+.ohio-carousel-cards__items-container {
+  overflow: hidden; }
+
+.ohio-carousel-cards .ohio-card-content {
+  text-align: justify;
+text-justify: inter-character; }
+
+.ohio-card-content-header {
+  font-weight: 500;
+  line-height: 1.4em;
+  padding-bottom: .1em;
+  overflow: hidden;
+  font-size: 20px;
+  text-align: left; }
+
+.ohio-card-content {
+  overflow: hidden; }
+
+.ohio-card-bg-img {
+  min-height: 200px;
+  object-fit: cover; }
+
+.ohio-carousel-icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative; }
+  .ohio-carousel-icons__title {
+    padding: 35px 0 35px 60px;
+    font-size: 30px; }
+  .ohio-carousel-icons__main-container {
+    position: relative; }
+  .ohio-carousel-icons___button-right, .ohio-carousel-icons___button-left {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0; }
+  .ohio-carousel-icons___button-left div {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    right: -70px;
+    background-image: url("./logos/arrow.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .ohio-carousel-icons___button-right div {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: -70px;
+    background-image: url("./logos/arrow.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat; }
+  .ohio-carousel-icons__items-container {
+    overflow: hidden; }
+
+@media (min-width: 1500px) {
+  .ohio-carousel-icons-icons-item__container {
+    width: calc(1440px / 6 - 25px);
+    margin: 0 15px; } }
+

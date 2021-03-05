@@ -1,6 +1,8 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="CSS\slick.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS\slick.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="CSS\slick.min.css">
+
     <link rel="stylesheet" type="text/css" href="CSS\slick-theme.min.css">
 
     <!-- <link rel="stylesheet" type="text/css" href="CSS\style.css"> -->
@@ -83,9 +85,9 @@
     </div>
     <p style="padding-left: 25px">See other resources about cats...</p>
         
-
+    <hr>
     <h2 style="padding-left: 25px;">Lizards</h2>
-    <div >
+    <div class="sliderArea">
         <section class="container container-fluid    ohio-carousel-cards__main-container">
           <!-- <div class="ohio-carousel-button-a11y">
       <div aria-label="ArrowLeft" class="ohio-carousel-button-left ohio-carousel-icons___button-left">
@@ -154,10 +156,11 @@
         </section>
     </div>
     <p style="padding-left: 25px">See other resources about lizards...</p>
-
+    <hr>
+    <p style="padding-left: 25px">Bal bla, bla bla bla...</p>
 
     <script type="text/javascript" src="JS\jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="JS\slick.min.js"></script>
+    <script type="text/javascript" src="JS\slick.js"></script>
 
 
     <!-- The most basic slider -->
@@ -174,7 +177,7 @@
     <script>
       $('.sliderArea').slick({
         infinite: false,
-        arrows: false,
+        arrows: true,
         draggable: true,
         mobileFirst: true,
         slidesToShow: 4,
@@ -191,6 +194,7 @@
           {
             breakpoint: 600,
             settings: {
+              arrows: true,
               slidesToShow: 2,
               slidesToScroll: 2
             }
@@ -198,6 +202,7 @@
           {
             breakpoint: 480,
             settings: {
+              arrows: true,
               slidesToShow: 1,
               slidesToScroll: 1
             }
